@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE menu SYSTEM "menu.dtd">
+<menu>
+    <entrada>
+        <plato codigo="E01" vegano="si">
+            <nombre>Ensalada de pollo</nombre>
+            <descripcion>Ensalada de pollo con ingredientes frescos y aderezo especial</descripcion>
+            <precio moneda="€">8.99</precio>
+            <alergenos>frutos secos</alergenos>
+            <alergenos>lactosa</alergenos>
+        </plato>
+        <plato codigo="E02" vegano="si">
+            <nombre>Sopa de verduras</nombre>
+            <descripcion>Sopa de verduras con ingredientes frescos</descripcion>
+            <precio moneda="€">4.99</precio>
+            <alergenos></alergenos>
+        </plato>
+    </entrada>
+    <platos_principales>
+        <plato codigo="P01" >
+            <nombre>Pollo al horno</nombre>
+            <descripcion>Pollo al horno con especias y salsa de la casa</descripcion>
+            <precio moneda="€">12.99</precio>
+            <alergenos>gluten</alergenos>
+            <alergenos>lactosa</alergenos>
+        </plato>
+        <plato codigo="P02" vegano="si">
+            <nombre>Ensalada de quinoa</nombre>
+            <descripcion>Ensalada de quinoa con vegetales y aderezo especial</descripcion>
+            <precio moneda="€">10.99</precio>
+            <alergenos> </alergenos>
+        </plato>
+    </platos_principales>
+    <postres>
+        <plato codigo="B01" vegano="si">
+            <nombre>Flan</nombre>
+            <descripcion>Flan casero con caramelo</descripcion>
+            <precio moneda="€">5.99</precio>
+            <alergenos>glucosa alta</alergenos>
+        </plato>
+        <plato codigo="B02" >
+            <nombre>Helado de vainilla</nombre>
+            <descripcion>Helado de vainilla con trozos de chocolate y galleta</descripcion>
+            <precio moneda="€">4.99</precio>
+            <alergenos>gluten</alergenos>
+            <alergenos>lactosa</alergenos>
+        </plato>
+    </postres>
+ 
+</menu>

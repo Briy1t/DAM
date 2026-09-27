@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE registro_fichajes [
+    <!ELEMENT registro_fichajes (fichaje+)>
+    <!ELEMENT fichaje (empleado, fecha , hora)>
+    <!ATTLIST fichaje estado (entrada | salida) #REQUIRED>
+    <!ELEMENT empleado (#PCDATA)>
+    <!ELEMENT fecha (#PCDATA)>
+    <!ELEMENT hora (#PCDATA)>
+]>
+
+<registro_fichajes>
+    <fichaje estado = "entrada" >  
+        <empleado>ID001</empleado>
+        <fecha>2023-10-01</fecha>
+        <hora>08:00</hora>
+    </fichaje>
+    <fichaje estado = "salida" >
+        <empleado>ID002</empleado>
+        <fecha>2023-10-01</fecha>
+        <hora>17:00</hora>
+    </fichaje>
+    <fichaje estado = "entrada" >
+        <empleado>ID003</empleado>
+        <fecha>2023-10-01</fecha>
+        <hora>09:00</hora>
+    </fichaje>
+</registro_fichajes>

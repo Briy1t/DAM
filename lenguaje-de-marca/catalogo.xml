@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalogo SYSTEM "catalogo.dtd">
+    
+<catalogo>
+    <producto id="001">
+        <nombre>Producto 1</nombre>
+        <marca>Marca A</marca>
+        <categoria>Categoria tecnologia</categoria>
+        <precio>€ 0.99</precio>
+    </producto>
+    <producto id="002">
+        <nombre>Producto 2</nombre>
+        <marca>Marca B</marca>
+        <categoria>Categoria hogar</categoria>
+        <precio>€ 1.99</precio>
+    </producto>
+    <producto id="003">
+        <nombre>Producto 3</nombre>
+        <marca>Marca C</marca>
+        <categoria>Categoria moda</categoria>
+        <precio>€ 6.99</precio>
+    </producto>
+    <producto id="004">
+        <nombre>Producto 4</nombre>
+        <marca>Marca D</marca>
+        <categoria>Categoria deporte</categoria>
+        <precio>€ 10.99</precio>
+    </producto>
+</catalogo>
