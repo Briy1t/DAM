@@ -64,6 +64,9 @@ DAM/
 │   └── ejercicios-clase/
 │
 └── README.md
+```
+
+---
 
 ## Competencias que Quiero Desarrollar
 
@@ -75,28 +78,24 @@ DAM/
 - Capacidad de aprendizaje autónomo.
 - Buenas prácticas de desarrollo.
 
----
+
 
 ## Progreso
 
 ### Java
 
-- [ ] Variables y tipos de datos
-- [ ] Operadores
-- [ ] Condicionales
-- [ ] Bucles
+- [x] Variables y tipos de datos
+- [x] Operadores
+- [x] Condicionales
+- [x] Bucles
 - [ ] Arrays
 - [ ] Métodos
 - [ ] Programación Orientada a Objetos
 
 ### Lenguaje de Marcas
 
-- [ ] HTML
 - [ ] XML
 - [ ] DTD
-- [ ] XML Schema (XSD)
-- [ ] XPath
-- [ ] XSLT
 
 ### Futuras Asignaturas
 
@@ -104,10 +103,7 @@ Cuando empiece nuevas materias durante el ciclo, crearé carpetas y secciones es
 
 - [ ] Bases de Datos
 - [ ] Entornos de Desarrollo
-- [ ] Sistemas Informáticos
-- [ ] Programación de Servicios y Procesos
 - [ ] Acceso a Datos
-- [ ] Desarrollo de Interfaces
 
 ---
 
