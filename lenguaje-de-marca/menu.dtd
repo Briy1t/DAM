@@ -1,12 +1,12 @@
-<!ELEMENT menu (entrada+, platos_principales+, postres+)>
-<!ELEMENT entrada (plato+)>
+<!ELEMENT menu (entrantes, platos_principales, postres)>
+<!ELEMENT entrantes (plato+)>
 <!ELEMENT platos_principales (plato+)>
 <!ELEMENT postres (plato+)>
-<!ELEMENT plato (nombre, descripcion? , precio, alergenos*)>
+<!ELEMENT plato (nombre, descripcion? , precio, alergeno*)>
 <!ELEMENT nombre (#PCDATA)>
 <!ELEMENT descripcion (#PCDATA)>
 <!ELEMENT precio (#PCDATA )>
-<!ELEMENT alergenos (#PCDATA)>
+<!ELEMENT alergeno (#PCDATA)>
 <!ATTLIST plato codigo ID #REQUIRED>
-<!ATTLIST plato vegano (si) #IMPLIED>
+<!ATTLIST plato vegetariano (si) #IMPLIED>
 <!ATTLIST precio moneda CDATA #IMPLIED >
