@@ -1,37 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE congreso SYSTEM "congreso.dtd">
 <congreso>
-    <nombre>Congreso Anual de Tecnología abierta</nombre>
-    <ponente id_ponente="P01">
-        <nombre>Juan Pérez</nombre>
-        <organizacion>Universidad de la Tecnología</organizacion>
-    </ponente>
-    <ponente id_ponente="P02">
-        <nombre>María López</nombre>
-        <organizacion>Instituto de Innovación</organizacion>
-    </ponente>
-    <ponente id_ponente="P03">
-        <nombre>Carlos García</nombre>
-        <organizacion>Empresa de Software</organizacion>
-    </ponente>
-    <ponente id_ponencia="T01">
-        <titulo>Avances en Inteligencia Artificial</titulo>
-        <descripcion>Exploración de los últimos avances en el campo de la inteligencia artificial y su impacto en la sociedad.</descripcion>
-        <ponente_ref>P01</ponente_ref>
-    </ponente>
-    <charla id_ponente_ref="P02">
-        <sala>Auditorio Principal</sala>
-        <titulo >Desarrollo de Aplicaciones Móviles</titulo>
-        <descripcion>Presentación sobre las mejores prácticas y herramientas para el desarrollo de aplicaciones móviles.</descripcion>
-    </charla>
-    <charla id_ponente_ref="T01">
-        <sala>Salón de Conferencias</sala>
-        <titulo>Seguridad en la Nube</titulo>
-        <descripcion>Discusión sobre los desafíos y soluciones en la seguridad de datos en entornos de nube.</descripcion>
-    </charla>
-    <charla id_ponente_ref="P03">
-        <sala>Salón de Innovación</sala>
-        <titulo>Transformación Digital en Empresas</titulo>
-        <descripcion>Análisis de cómo las empresas están adoptando la transformación digital para mejorar sus procesos y servicios.</descripcion>
-    </charla>
-    <footer> Gracias por asistir al Congreso Anual de Tecnología Abierta.</footer>
+    <ponentes>
+        <ponente id_ponente="P01">
+            <nombre>Juan Pérez</nombre>
+            <organizacion>Universidad de la Tecnología</organizacion>
+        </ponente>
+        <ponente id_ponente="P02">
+            <nombre>María López</nombre>
+            <organizacion>Instituto de Innovación</organizacion>
+        </ponente>
+        <ponente id_ponente="P03">
+            <nombre>Carlos García</nombre>
+            <organizacion>Empresa de Software</organizacion>
+        </ponente>
+    </ponentes>
+    
+    <charlas>
+        <charla id_ponente_ref="P02" sala="Auditorio Principal">
+            <titulo>Desarrollo de Aplicaciones Móviles</titulo>
+            <resumen>Presentación sobre las mejores prácticas y herramientas para el desarrollo de aplicaciones móviles.</resumen>
+        </charla>
+        <charla id_ponente_ref="P01">
+            <titulo>Seguridad en la Nube</titulo>
+            <resumen>Discusión sobre los desafíos y soluciones en la seguridad de datos en entornos de nube.</resumen>
+        </charla>
+        <charla id_ponente_ref="P03" sala="Salón de Innovación">
+            <titulo>Transformación Digital en Empresas</titulo>
+            <resumen>Análisis de cómo las empresas están adoptando la transformación digital para mejorar sus procesos y servicios.</resumen>
+        </charla>
+    </charlas>
+    
+    <footer>Gracias por asistir al &nombre_congreso;.</footer>
 </congreso>

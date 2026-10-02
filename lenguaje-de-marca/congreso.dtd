@@ -1,0 +1,18 @@
+<!ENTITY nombre_congreso "Congreso Anual de Tecnología Abierta">
+<!ELEMENT congreso (ponentes, charlas, footer)>
+
+<!ELEMENT ponentes (ponente+)>
+<!ELEMENT ponente (nombre, organizacion)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT organizacion (#PCDATA)>
+
+<!ELEMENT charlas (charla+)>
+<!ELEMENT charla (titulo, resumen)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT resumen (#PCDATA)>
+
+<!ELEMENT footer (#PCDATA)>
+
+<!ATTLIST ponente id_ponente ID #REQUIRED>
+<!ATTLIST charla sala CDATA #IMPLIED>
+<!ATTLIST charla id_ponente_ref IDREF #REQUIRED>

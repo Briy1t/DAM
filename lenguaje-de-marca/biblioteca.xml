@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c:biblioteca xmlns:c="http://www.biblioteca.com/libros"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.biblioteca.com/libros biblioteca.xsd">
+    <c:libro>
+        <c:titulo>Una red viva: La historia interna de nuestro cerebro</c:titulo>
+        <c:autor> David Eagleman</c:autor>
+        <c:anio_publicacion>2024</c:anio_publicacion>
+        <c:editorial>Anagrama</c:editorial>
+    </c:libro>
+
+    <c:libro>
+        <c:titulo>El río de la conciencia</c:titulo>
+        <c:autor>Oliver Sacks</c:autor>
+        <c:anio_publicacion>	2019</c:anio_publicacion>
+        <c:editorial>Anagrama</c:editorial>
+    </c:libro>
+
+    <c:libro>
+        <c:titulo>Mente y cerebro</c:titulo>
+        <c:autor>	Mª Teresa Bajo Molina, et al.</c:autor>
+        <c:anio_publicacion>2016</c:anio_publicacion>
+        <c:editorial>	Alianza</c:editorial>
+    </c:libro>
+
+    <c:libro>
+        <c:titulo>Incógnito: Las vidas secretas del cerebro</c:titulo>
+        <c:autor>David Eagleman</c:autor>
+        <c:anio_publicacion>	2013</c:anio_publicacion>
+    </c:libro>
+
+</c:biblioteca>
