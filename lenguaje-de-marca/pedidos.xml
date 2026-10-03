@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c:pedidos xmlns:c="http://www.pedidos.com/pedidos"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.pedidos.com/pedidos pedidos.xsd">
+    <c:pedido id="PED-1234" estado="procesando" urgente="false">
+        <c:fecha>2026-06-15</c:fecha>
+        <c:cliente>Andrés Rojas</c:cliente>
+        <c:total_pedido>150</c:total_pedido>
+    </c:pedido>
+
+    <c:pedido id="PED-1434" estado="enviado" urgente="true">
+        <c:fecha>2026-07-18</c:fecha>
+        <c:cliente>Santiago Martínez</c:cliente>
+        <c:total_pedido>350</c:total_pedido>
+    </c:pedido>
+
+    <c:pedido id="PED-1324" estado="entregado" urgente="false">
+        <c:fecha>2026-07-19</c:fecha>
+        <c:cliente>Kevin Ruiz</c:cliente>
+        <c:total_pedido>160</c:total_pedido>
+    </c:pedido>
+
+    <c:pedido id="PED-4111" estado="procesando" >
+        <c:fecha>2026-07-21</c:fecha>
+        <c:cliente>Maria Gonzalez</c:cliente>
+        <c:total_pedido>1050</c:total_pedido>
+    </c:pedido>
+</c:pedidos>

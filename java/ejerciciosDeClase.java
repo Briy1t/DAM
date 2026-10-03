@@ -1,57 +1,3 @@
-// =========================
-// EJERCICIO 10
-// =========================
-
-// Diseña un algoritmo que lea un valor y muestre si es positivo o negativo.
-// Considera que 0 es positivo.
-
-
-// =========================
-// EJERCICIO 11
-// =========================
-
-// Diseña un algoritmo que lea dos valores
-// y los muestre en orden ascendente.
-
-
-// =========================
-// EJERCICIO 12
-// =========================
-
-// Diseña un algoritmo que lea dos valores
-// y muestre el mayor de ellos.
-
-
-// =========================
-// EJERCICIO 13
-// =========================
-
-// Diseña un algoritmo que lea tres valores
-// y muestre el mayor de ellos.
-
-
-// =========================
-// EJERCICIO 14
-// =========================
-
-// Diseña un algoritmo que lea tres valores
-// y los muestre en orden ascendente.
-
-
-// =========================
-// EJERCICIO 15
-// =========================
-
-// Diseña un algoritmo que lea una nota entera
-// y muestre su valoración:
-//
-// De 0 a <3  -> Muy Deficiente
-// De 3 a <5  -> Insuficiente
-// De 5 a <6  -> Suficiente
-// De 6 a <7  -> Bien
-// De 7 a <9  -> Notable
-// De 9 a 10  -> Sobresaliente
-
 
 // =========================
 // EJERCICIO 17
@@ -213,3 +159,231 @@
 //
 // El usuario introducirá un valor n
 // que actuará como aproximación al infinito.
+
+// =========================
+// EJERCICIO 35
+// =========================
+
+// Leer 10 números y mostrar:
+//
+// - Cuántos son positivos.
+// - Cuántos son negativos.
+// - Cuántos son cero.
+
+
+// =========================
+// EJERCICIO 36
+// =========================
+
+// Leer 10 números y mostrar:
+//
+// - El mayor.
+// - El menor.
+
+
+// =========================
+// EJERCICIO 37
+// =========================
+
+// Leer números hasta que el usuario introduzca -1.
+//
+// Mostrar:
+// - Cantidad de números introducidos.
+// - Suma total.
+// - Media.
+
+
+// =========================
+// EJERCICIO 38
+// =========================
+
+// Pedir un número y determinar
+// si es primo o no.
+
+
+// =========================
+// EJERCICIO 39
+// =========================
+
+// Mostrar todos los números primos
+// comprendidos entre 1 y 100.
+
+
+// =========================
+// EJERCICIO 40
+// =========================
+
+// Pedir un número y contar
+// cuántos dígitos tiene.
+
+
+// =========================
+// EJERCICIO 41
+// =========================
+
+// Pedir un número y mostrarlo
+// invertido.
+//
+// Ejemplo:
+//
+// Entrada: 12345
+// Salida: 54321
+
+
+// =========================
+// EJERCICIO 42
+// =========================
+
+// Pedir un número y comprobar
+// si es capicúa.
+//
+// Ejemplos:
+//
+// 121 -> Sí
+// 1331 -> Sí
+// 123 -> No
+
+
+// =========================
+// EJERCICIO 43
+// =========================
+
+// Pedir un número y calcular
+// la suma de sus dígitos.
+//
+// Ejemplo:
+//
+// 1234 -> 10
+
+
+// =========================
+// EJERCICIO 44
+// =========================
+
+// Generar la siguiente serie:
+//
+// 1
+// 1 2
+// 1 2 3
+// ...
+//
+// hasta n filas.
+
+
+// =========================
+// EJERCICIO 45
+// =========================
+
+// Generar el siguiente patrón:
+//
+// *
+// **
+// ***
+// ****
+// *****
+
+
+// =========================
+// EJERCICIO 46
+// =========================
+
+// Generar el siguiente patrón:
+//
+// *****
+// ****
+// ***
+// **
+// *
+
+
+/* =========================
+   EJERCICIO 47
+   ========================= */
+
+// Crear una calculadora simple.
+//
+// Pedir:
+//
+// - Número 1
+// - Número 2
+// - Operación (+,-,*,/)
+//
+// Mostrar el resultado.
+
+
+/* =========================
+   EJERCICIO 48
+   ========================= */
+
+// Simular un cajero automático.
+//
+// Menú:
+//
+// 1. Consultar saldo
+// 2. Ingresar dinero
+// 3. Retirar dinero
+// 4. Salir
+//
+// Utilizar un bucle para mantener
+// el programa funcionando.
+
+
+/* =========================
+   EJERCICIO 49
+   ========================= */
+
+// Juego de adivinar un número.
+//
+// El programa genera un número
+// entre 1 y 100.
+//
+// El usuario debe adivinarlo.
+//
+// Indicar:
+//
+// - "Mayor"
+// - "Menor"
+//
+// hasta acertar.
+
+
+/* =========================
+   EJERCICIO 50
+   ========================= */
+
+// Crear un menú repetitivo:
+//
+// 1. Área cuadrado
+// 2. Área rectángulo
+// 3. Área círculo
+// 4. Salir
+//
+// Utilizar switch.
+
+/*
+Ejercicio 1: Crea un Proyecto Bicycles, añade la clase Bicycle y luego añade la clase BicycleDemo en un nuevo fichero .java compartiendo el proyecto en Github.
+
+Ejercicio 2: Añade la clase TandemBike al proyecto del Ejercicio 1, haz un commit y súbelo al repositorio remoto en Github (y posteriormente modifica la clase TandemBike haciendo commit y push).
+
+Ejercicio 3: Crea un nuevo proyecto SwitchDemo y compártelo en Github.
+
+Ejercicio 4: Sube el programa ArrayDemo4.
+
+Ejercicio 5: Desarrolla un algoritmo que lea 10 números introducidos desde el teclado, guárdalos en un array y muéstralos en orden inverso. Sube Exercise5.
+
+Ejercicio 6: Desarrolla un algoritmo que lea 10 números introducidos desde el teclado, guárdalos en un array, invierte el array (intercambiando los elementos de las posiciones correspondientes) e imprímelo en orden normal. Sube Exercise6.
+
+Ejercicio 7: Escribe un programa que lea un DNI (sin la letra) y calcule la letra correspondiente tomando el DNI como un número, calculando el resto de la división entre 23 y asignando la letra usando la tabla proporcionada. Sube Exercise7.
+
+Ejercicio 8: Escribe un programa que cree una matriz de 10x10 elementos, inicialice sus elementos a 1, establezca a 8 los elementos en las posiciones (0, 4), (2, 6), (3, 1) y (8, 6), y luego la imprima con el formato indicado. Sube Exercise8.
+
+Ejercicio 9: Modifica el programa anterior para mostrar cuántas filas hay con todos los elementos a 1 y cuántas columnas hay con todos los elementos a 1. Sube Exercise9.
+
+Ejercicio 10: Escribe un programa que calcule la moda (el elemento más frecuente) de una lista de 20 caracteres inicializada en la declaración del array. Sube Exercise10.
+
+Ejercicio 11: Escribe un programa que simule el juego Batalla Naval sobre un tablero de 8x8 donde la computadora coloca 10 barcos al azar de una sola celda y el usuario introduce coordenadas, escribiendo el tablero completo en cada turno con los barcos hundidos (X) y los fallos (círculos), mostrando además el contador de disparos y barcos hundidos. Sube Exercise11.
+
+Ejercicio Select-Sort: Implementa el algoritmo Select-Sort en Java y pruébalo con un array de cadenas inicializadas en el programa (sin leerlas con el teclado).
+
+Ejercicio Bubble-Sort: Implementa el algoritmo de Ordenamiento de Burbuja en Java y pruébalo con un array de Strings inicializado en el programa (sin leerlos mediante el teclado).
+*/
