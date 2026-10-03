@@ -1,0 +1,7 @@
+# Ignorar todos los archivos compilados de Java
+*.class
+
+# Ignorar archivos empaquetados (opcional, pero recomendado)
+*.jar
+*.war
+*.ear

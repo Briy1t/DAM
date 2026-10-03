@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="<UTF-8>"?>
+<xs:schema xmlns:xs="http//www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.pedidos.com/pedidos"
+           xmlns:c="http://www.pedidos.com/pedidos"
+           elementFormDefault="qualified">
+    <xs:element name="pedidos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="pedido" minOccurs="2" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="fecha" type="xs:date"/>
+                            <xs:element name="cliente" type="xs:string"/>
+                            <xs:element name="total_pedido" type="xs:decimal"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
