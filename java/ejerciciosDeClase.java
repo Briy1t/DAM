@@ -1,39 +1,5 @@
 
 // =========================
-// EJERCICIO 17
-// =========================
-
-// Diseña un algoritmo que reciba horas,
-// minutos y segundos y muestre las horas,
-// minutos y segundos resultantes de añadir un segundo.
-
-
-// =========================
-// EJERCICIO 18
-// =========================
-
-// Diseña un algoritmo que calcule el salario neto
-// de un trabajador según las siguientes reglas:
-//
-// - Las primeras 35 horas se pagan al precio normal.
-// - Las horas superiores a 35 se pagan a 1.5 veces el precio normal.
-//
-// Impuestos:
-// - Los primeros 500 € están libres de impuestos.
-// - Los siguientes 400 € tributan al 25%.
-// - El resto tributa al 45%.
-//
-// Datos de entrada:
-// - Precio por hora.
-// - Horas trabajadas.
-//
-// Datos de salida:
-// - Salario bruto.
-// - Impuestos.
-// - Salario neto.
-
-
-// =========================
 // EJERCICIO 20
 // =========================
 
@@ -361,9 +327,6 @@
 // Utilizar switch.
 
 /*
-Ejercicio 1: Crea un Proyecto Bicycles, añade la clase Bicycle y luego añade la clase BicycleDemo en un nuevo fichero .java compartiendo el proyecto en Github.
-
-Ejercicio 2: Añade la clase TandemBike al proyecto del Ejercicio 1, haz un commit y súbelo al repositorio remoto en Github (y posteriormente modifica la clase TandemBike haciendo commit y push).
 
 Ejercicio 3: Crea un nuevo proyecto SwitchDemo y compártelo en Github.
 

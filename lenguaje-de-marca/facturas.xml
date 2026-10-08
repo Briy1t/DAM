@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c:facturas xmlns:c="http://www.facturas.com/facturas"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.facturas.com/facturas facturas.xsd">
+
+        <c:factura id="FAC-00012" metodo_pago="tarjeta" pagado="false">
+            <c:fecha_emision>2026-06-15</c:fecha_emision>
+            <c:empresa_emisora>Cooporación S.A.</c:empresa_emisora>
+            <c:importe_total>100</c:importe_total>
+            <c:iva>21</c:iva>
+        </c:factura>
+
+
+        <c:factura id="FAC-00013" metodo_pago="efectivo" pagado="true">
+            <c:fecha_emision>2026-07-18</c:fecha_emision>
+            <c:empresa_emisora>Cooporación S.A.</c:empresa_emisora>
+            <c:importe_total>200</c:importe_total>
+            <c:iva>24</c:iva>
+        </c:factura>
+</c:facturas>   

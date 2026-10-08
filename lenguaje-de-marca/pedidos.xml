@@ -2,6 +2,7 @@
 <c:pedidos xmlns:c="http://www.pedidos.com/pedidos"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.pedidos.com/pedidos pedidos.xsd">
+
     <c:pedido id="PED-1234" estado="procesando" urgente="false">
         <c:fecha>2026-06-15</c:fecha>
         <c:cliente>Andrés Rojas</c:cliente>
