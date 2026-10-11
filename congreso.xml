@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cong:congreso xmlns:cong="http://www.congreso.com/schema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.congreso.com/schema congreso.xsd">
+
+    <cong:ponentes>
+        <cong:ponente id="P01">
+            <cong:nombre>Juan Pérez</cong:nombre>
+            <cong:organizacion>Universidad de la Ciudad</cong:organizacion>
+        </cong:ponente> 
+
+        <cong:ponente id="P02">
+            <cong:nombre>María García</cong:nombre>
+            <cong:organizacion>Universidad Nacional</cong:organizacion>
+        </cong:ponente> 
+
+        <cong:ponente id="P03">
+            <cong:nombre>Andrés Rojas</cong:nombre>
+            <cong:organizacion>Universidad Tecnológica</cong:organizacion>
+        </cong:ponente> 
+    </cong:ponentes>
+
+    <cong:charlas >
+        <cong:charla ponente_ref="P02">
+            <cong:titulo>La inteligencia artificial y su impacto en la sociedad</cong:titulo>
+            <cong:resumen>Exploraremos cómo la inteligencia artificial está transformando diversos aspectos de nuestra vida cotidiana y su influencia en la sociedad.</cong:resumen>
+            <cong:sala>Sala A</cong:sala>
+        </cong:charla>
+        <cong:charla ponente_ref="P03">
+            <cong:titulo>La innovación tecnológica en la educación</cong:titulo>
+            <cong:resumen>Analizaremos cómo las nuevas tecnologías están revolucionando el entorno educativo y mejorando la experiencia del alumno.</cong:resumen>
+            <cong:sala>Sala B</cong:sala>
+        </cong:charla>
+        <cong:charla ponente_ref="P01">
+            <cong:titulo>La gestión del cambio en organizaciones</cong:titulo>
+            <cong:resumen>Estudiaremos las estrategias efectivas para gestionar el cambio en entornos organizacionales dinámicos.</cong:resumen>
+            <cong:sala>Sala C</cong:sala>
+        </cong:charla>
+        <cong:charla ponente_ref="P02">
+            <cong:titulo>Las tendencias en el desarrollo de software</cong:titulo>
+            <cong:resumen>Analizaremos las últimas tendencias en el desarrollo de software y su impacto en la industria.</cong:resumen>
+            <cong:sala>Sala D</cong:sala>
+        </cong:charla>
+    </cong:charlas>
+</cong:congreso>
+           

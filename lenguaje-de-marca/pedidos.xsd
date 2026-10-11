@@ -3,6 +3,7 @@
            targetNamespace="http://www.pedidos.com/pedidos"
            xmlns:c="http://www.pedidos.com/pedidos"
            elementFormDefault="qualified">
+
     <xs:element name="pedidos">
         <xs:complexType>
             <xs:sequence>
@@ -11,11 +12,31 @@
                         <xs:sequence>
                             <xs:element name="fecha" type="xs:date"/>
                             <xs:element name="cliente" type="xs:string"/>
-                            <xs:element name="total_pedido" type="xs:decimal"/>
+                            <xs:element name="total_pedido">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:decimal">
+                                        <xs:minInclusive value="0.01"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
                         </xs:sequence>
-                        <xs:attribute name="id" type="xs:string" use="required"/>
-                        <xs:attribute name="estado" type="xs:string" use="required"/>
-                        <xs:attribute name="urgente" type="xs:boolean" use="optional"/>
+                        <xs:attribute name="id_pedido" use="required">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="PED-[0-9]{4}"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="estado" use="required">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="procesando"/>
+                                    <xs:enumeration value="enviado"/>
+                                    <xs:enumeration value="entregado"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="urgente" type="xs:boolean" use="optional" default="false"/>
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>

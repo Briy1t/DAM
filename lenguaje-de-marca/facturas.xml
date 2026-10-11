@@ -3,18 +3,25 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.facturas.com/facturas facturas.xsd">
 
-        <c:factura id="FAC-00012" metodo_pago="tarjeta" pagado="false">
+        <c:factura id_factura="FAC-00012" metodo_pago="tarjeta" pagado="false">
             <c:fecha_emision>2026-06-15</c:fecha_emision>
             <c:empresa_emisora>Cooporación S.A.</c:empresa_emisora>
             <c:importe_total>100</c:importe_total>
             <c:iva>21</c:iva>
         </c:factura>
 
-
-        <c:factura id="FAC-00013" metodo_pago="efectivo" pagado="true">
+        <c:factura id_factura="FAC-00013" metodo_pago="efectivo" pagado="true">
             <c:fecha_emision>2026-07-18</c:fecha_emision>
-            <c:empresa_emisora>Cooporación S.A.</c:empresa_emisora>
+            <c:empresa_emisora>Operative</c:empresa_emisora>
             <c:importe_total>200</c:importe_total>
             <c:iva>24</c:iva>
         </c:factura>
+
+        <c:factura id_factura="FAC-00014" metodo_pago="transferencia" pagado="false">
+            <c:fecha_emision>2026-08-20</c:fecha_emision>
+            <c:empresa_emisora>Integración S.A.</c:empresa_emisora>
+            <c:importe_total>150</c:importe_total>
+            <c:iva>18</c:iva>
+        </c:factura>
+        
 </c:facturas>   
