@@ -19,7 +19,7 @@
         <plato codigo="P01" >
             <nombre>Pollo al horno</nombre>
             <descripcion>Pollo al horno con especias y salsa de la casa</descripcion>
-            <precio moneda="€">12.99</precio>
+            <precio moneda="€">12.98</precio>
             <alergeno>gluten</alergeno>
             <alergeno>lactosa</alergeno>
         </plato>
