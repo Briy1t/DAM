@@ -1,32 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<c:biblioteca xmlns:c="http://www.biblioteca.com/libros"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.biblioteca.com/libros biblioteca.xsd">
-    <c:libro>
-        <c:titulo>Una red viva: La historia interna de nuestro cerebro</c:titulo>
-        <c:autor> David Eagleman</c:autor>
-        <c:anio_publicacion>2024</c:anio_publicacion>
-        <c:editorial>Anagrama</c:editorial>
-    </c:libro>
+<bib:biblioteca xmlns:bib="http://www.mi-instituto.com/biblioteca"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://www.mi-instituto.com/biblioteca biblioteca.xsd">
+    
+    <bib:libros>
+        <bib:libro codigo="L001">
+            <bib:titulo>El Quijote</bib:titulo>
+            <bib:autor>Miguel de Cervantes</bib:autor>
+            <bib:anio>1605</bib:anio>
+        </bib:libro>
+        <bib:libro codigo="L002">
+            <bib:titulo>Cien años de soledad</bib:titulo>
+            <bib:autor>Gabriel García Márquez</bib:autor>
+            <bib:anio>1967</bib:anio>
+        </bib:libro>
+        <bib:libro codigo="L003">
+            <bib:titulo>La sombra del viento</bib:titulo>
+            <bib:autor>Carlos Ruiz Zafón</bib:autor>
+            <bib:anio>2001</bib:anio>
+        </bib:libro>
+    </bib:libros>
 
-    <c:libro>
-        <c:titulo>El río de la conciencia</c:titulo>
-        <c:autor>Oliver Sacks</c:autor>
-        <c:anio_publicacion>	2019</c:anio_publicacion>
-        <c:editorial>Anagrama</c:editorial>
-    </c:libro>
+    <bib:prestamos>
+        <bib:prestamo libro_ref="L001">
+            <bib:alumno>Ana Gómez Pérez</bib:alumno>
+            <bib:email>ana.gomez@instituto.com</bib:email>
+            <bib:fecha_prestamo>2026-03-01</bib:fecha_prestamo>
+            <bib:fecha_devolucion>2026-03-15</bib:fecha_devolucion>
+        </bib:prestamo>
 
-    <c:libro>
-        <c:titulo>Mente y cerebro</c:titulo>
-        <c:autor>	Mª Teresa Bajo Molina, et al.</c:autor>
-        <c:anio_publicacion>2016</c:anio_publicacion>
-        <c:editorial>	Alianza</c:editorial>
-    </c:libro>
+        <bib:prestamo libro_ref="L001">
+            <bib:alumno>Carlos Ruiz López</bib:alumno>
+            <bib:telefono>612345678</bib:telefono>
+            <bib:fecha_prestamo>2026-04-10</bib:fecha_prestamo>
+        </bib:prestamo>
 
-    <c:libro>
-        <c:titulo>Incógnito: Las vidas secretas del cerebro</c:titulo>
-        <c:autor>David Eagleman</c:autor>
-        <c:anio_publicacion>	2013</c:anio_publicacion>
-    </c:libro>
+        <bib:prestamo libro_ref="L002">
+            <bib:alumno>María Martín Sanz</bib:alumno>
+            <bib:email>maria.martin@instituto.com</bib:email>
+            <bib:fecha_prestamo>2026-04-05</bib:fecha_prestamo>
+            <bib:fecha_devolucion>2026-04-20</bib:fecha_devolucion>
+        </bib:prestamo>
+    </bib:prestamos>
 
-</c:biblioteca>
+</bib:biblioteca>

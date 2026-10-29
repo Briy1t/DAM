@@ -1,23 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           targetNamespace="http://www.biblioteca.com/libros"
-           xmlns:c="http://www.biblioteca.com/libros"
+           targetNamespace="http://www.mi-instituto.com/biblioteca"
+           xmlns:bib="http://www.mi-instituto.com/biblioteca"
            elementFormDefault="qualified">
 
-   <xs:element name="biblioteca">
-    <xs:complexType>
-        <xs:sequence>
-            <xs:element name="libro" minOccurs="3" maxOccurs="unbounded">
-                <xs:complexType>
-                    <xs:sequence>
-                        <xs:element name="titulo" type="xs:string"/>
-                        <xs:element name="autor" type="xs:string"/>
-                        <xs:element name="anio_publicacion" type="xs:integer"/>
-                        <xs:element name="editorial" type="xs:string" minOccurs="0" maxOccurs="1"/>
-                    </xs:sequence>
-                </xs:complexType>
-            </xs:element>
-        </xs:sequence>
-    </xs:complexType>
-   </xs:element>
+    <xs:element name="biblioteca">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="libros">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="libro" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="titulo" type="xs:string"/>
+                                        <xs:element name="autor" type="xs:string"/>
+                                        <xs:element name="anio" type="xs:integer"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="codigo" type="bib:TipoCodigoLibro" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="prestamos">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="prestamo" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="alumno" type="xs:string"/>
+                                        
+                                        <xs:choice>
+                                            <xs:element name="email" type="xs:string"/>
+                                            <xs:element name="telefono">
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:pattern value="[0-9]{9}"/>
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:element>
+                                        </xs:choice>
+
+                                        <xs:element name="fecha_prestamo" type="xs:date"/>
+                                        <xs:element name="fecha_devolucion" type="xs:date" minOccurs="0"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="libro_ref" type="bib:TipoCodigoLibro" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+
+        <xs:key name="keyLibro">
+            <xs:selector xpath="bib:libros/bib:libro"/>
+            <xs:field xpath="@codigo"/>
+        </xs:key>
+
+        <xs:keyref name="refLibroPrestamo" refer="bib:keyLibro">
+            <xs:selector xpath="bib:prestamos/bib:prestamo"/>
+            <xs:field xpath="@libro_ref"/>
+        </xs:keyref>
+
+    </xs:element>
+
+    <xs:simpleType name="TipoCodigoLibro">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="L[0-9]{3}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
 </xs:schema>
